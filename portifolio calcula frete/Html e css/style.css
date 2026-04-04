@@ -1,0 +1,242 @@
+body {
+  background-image: url(principal.jpg);
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 25px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 600;
+}
+
+header a { color:black; text-decoration:none; font-weight:600; font-size:18px; }
+
+.card {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+
+  width: 420px;
+  padding: 40px;
+
+  border-radius: 20px;
+  margin: 120px auto;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.campo {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.iconee { margin-right: 10px; font-size: 18px; }
+
+.inputdestino {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.textoprincipal { font-size: 32px; font-weight:700; color:#111827; margin-bottom:10px; }
+.segundotexto { font-size:19px; font-weight:700; color:#111827; margin-bottom:10px; }
+
+.frete {
+  background: linear-gradient(90deg,#2563eb,#06b6d4);
+  color:white;
+  font-size:20px;
+  font-weight:700;
+  width:100%;
+  margin-top:15px;
+  padding:10px 25px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.frete:hover { transform:translateY(-3px); box-shadow:0 12px 25px rgba(0,0,0,0.25); }
+.frete:active { transform: scale(0.97); }
+
+.meio {
+  background: #111827;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:80px 20px;
+  text-align:center;
+}
+.box {
+  padding:8px;
+  width:240px;
+  color:white;
+  border-radius:28px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.box:hover { transform: translateY(-5px); }
+.icone { font-size:40px; margin-bottom:5px; }
+
+.footer {
+  background:#111827;
+  color:#d1d5db;
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+}
+.footer strong { color:white; font-size:16px; }
+
+.autocomplete-sugestoes {
+  list-style:none;
+  margin:0;
+  padding:0;
+  border:1px solid #ccc;
+  border-top:none;
+  max-height:180px;
+  overflow-y:auto;
+  background:#fff;
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  z-index:1000;
+  display:none;
+}
+.autocomplete-sugestoes li { padding:8px 12px; cursor:pointer; }
+.autocomplete-sugestoes li:hover { background-color:#f0f0f0; }
+
+.card {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.92);
+}
+
+.inputdestino:focus {
+  border: 1px solid #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.frete {
+  font-size: 22px;
+  padding: 14px;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fafb;
+  text-align: center;
+  display: none;
+}
+
+.prova {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111827;
+  color: white;
+}
+
+.resultado {
+  display: none;
+}
+
+.btn-wpp {
+  background-color: #25D366; /* Verde WhatsApp */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-wpp:hover {
+  background-color: #1ebe57; /* Verde mais escuro no hover */
+  transform: scale(1.05);
+}
+
+.btn-wpp:active {
+  transform: scale(0.98);
+}
+
+
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  background-color: #f9f9f9;
+}
+
+input[type="datetime-local"]:focus {
+  border-color: #25D366; /* Verde WhatsApp */
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+  background-color: #fff;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Botão WhatsApp estilizado */
+.btn-wpp {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366; /* verde WhatsApp */
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.btn-wpp:hover {
+  background-color: #1ebe57;
+}
+
+.btn-wpp svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 8px;
+}
