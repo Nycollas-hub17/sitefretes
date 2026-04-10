@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eduardo Fretes e Transportes</title>
+  </head>
+
+  <body>
+    <header>
+      <h3 id="Inicio">Inicio</h3>
+      <div class="Contato">
+        <a href="https://wa.me/5551994446077">Contato</a>
+      </div>
+      <h3 id="comofunciona">Como funciona</h3>
+    </header>
+
+    <div class="card">
+      <h1 class="textoprincipal">Calcule seu Frete em Segundos</h1>
+      <p class="segundotexto">Rápido, simples e sem complicação</p>  
+
+      <div id="resultado" class="resultado"></div> 
+
+      <button id="btnWhats" class="frete" style="display:none;">
+  Fechar pelo WhatsApp
+</button>
+
+      <div class="campo">
+        <span class="iconee">📍</span>
+        <input id="retirada" class="inputdestino" type="text" placeholder="Rua, número, cidade (ex: Centro Viamão RS" />
+      </div>
+
+      <div class="campo">
+        <span class="iconee">🏁</span>
+        <input id="destino" class="inputdestino" type="text" placeholder="Rua, número, cidade (ex: Centro Viamão RS" />
+      </div>
+
+      <div class="campo">
+        <span class="iconee">📦</span>
+        <input id="carga" class="inputdestino" type="text" placeholder="Lista de itens completa" />
+      </div>
+
+      <div class="campo">
+        <span class="iconee">🪜</span>
+        <select id="escada" class="inputdestino">
+  <option value="">Possui escada?</option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+
+      </div>
+
+      <div class="campo">
+        <span class="iconee">🧑‍🔧</span>
+        <select id="ajudante" class="inputdestino">
+  <option value="">Necessita Ajudante?</option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+
+      </div>
+
+      <div class="campo">
+        <span class="iconee">⏰</span>
+        <label for="datahora">Data e Hora:</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+      </div>
+
+      <button class="frete" onclick="enviarWhats()">Calcular frete</button>
+    </div>
+
+    <section class="meio">
+      <div class="box">
+        <div class="icone">🚚</div>
+        <h3>Rápido</h3>
+        <p>Entrega ágil e eficiente</p>
+      </div>
+
+      <div class="box">
+        <div class="icone">🔒</div>
+        <h3>Seguro</h3>
+        <p>Seu produto protegido</p>
+      </div>
+
+      <div class="box">
+        <div class="icone">💰</div>
+        <h3>Econômico</h3>
+        <p>Melhor custo-benefício</p>
+      </div>
+    </section>
+
+    <section class="prova">
+  <h2>Mais de 500 fretes realizados</h2>
+  <p>Clientes satisfeitos todos os dias 🚚</p>
+</section>
+
+    <footer class="footer">
+      <p><strong>Eduardo Fretes</strong></p>
+      <p>Frete rápido, seguro e econômico</p>
+      <p>© 2026 Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
